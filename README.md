@@ -1,6 +1,12 @@
+https://docs.angularjs.org/api
+
+name with error handling
+https://plnkr.co/edit/T2mqqcDVOWoDu3acEmVU?p=preview
+
 radio button, dropdown
 http://jsfiddle.net/hgxjv/615/
 http://www.tutorialspoint.com/angular_material/angular_material_radiobuttons.htm
+
 
 <!doctype html>
 <!-- radio button, dropdown
