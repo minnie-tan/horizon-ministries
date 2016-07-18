@@ -40,3 +40,58 @@ http://jsfiddle.net/hgxjv/5/
 
 </body>
 </html>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-example87-production</title>
+  
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+  
+  <script type="text/javascript">
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+</head>
+<body ng-app="mainApp">
+  <script>
+ angular.module('mainApp', [])
+   .controller('PersonController', ['$scope', function($scope) {
+     $scope.person = {
+       name: 'A'
+     }   
+   }]);
+</script>
+<style>
+  .my-input {
+    transition:all linear 0.5s;
+    background:transparent;
+  }
+  .my-input.ng-invalid {
+    color:white;
+    background:red;
+  }
+</style>
+<p id="inputDescription">
+ String is a valid value when 'string string'
+</p>
+
+<form name="testForm" ng-controller="PersonController">
+  <label>Name: 
+  <input ng-model="person.name" ng-pattern="/(?:\s*[a-zA-Z])+/si" name="anim" class="my-input"
+         aria-describedby="inputDescription" />  
+  </label>
+  
+</form>
+
+</body>
+</html>
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
