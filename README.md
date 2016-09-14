@@ -1,5 +1,8 @@
 https://docs.angularjs.org/api
 
+route
+https://docs.angularjs.org/api/ngRoute/service/$route
+
 name with error handling
 https://plnkr.co/edit/T2mqqcDVOWoDu3acEmVU?p=preview
 
